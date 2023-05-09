@@ -1,0 +1,54 @@
+{%load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <style> 
+      body{background-image:url("{% static 'diabetes\images\diabetess.jpg'%}")}
+    </style>
+
+  </head>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+    }
+    h1 {
+      font-size: 40px;
+      font-family: Arial, sans-serif;
+      color: navy;
+      text-align: center;
+    }
+    form {
+      margin-top: 20px;
+      
+    }
+    input[type="submit"] {
+      font-size: 28px;
+      font-family: Arial, sans-serif;
+      color: navy;
+      border-radius: 10px;
+      padding: 10px 20px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Diabetes Prediction System</h1>
+    <form action="predict">
+      <input type="submit" value="Let's get started">
+    </form>
+  </div>
+</body>
+  
+
+</html>

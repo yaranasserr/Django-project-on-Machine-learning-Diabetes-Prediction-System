@@ -1,0 +1,114 @@
+{%load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prediction Page</title>
+    <script>
+      function showMessage() {
+        alert("Your result is  here");
+      }
+    </script>
+    <style> 
+        body{background-image:url("{% static 'diabetes\images\diabetess.jpg'%}")}
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height:90vh;
+        }
+        h1 {
+          font-size: 25px;
+          font-family: Arial, sans-serif;
+          color: navy;
+          text-align: center;
+        }
+        h2 {
+          font-size: 20px;
+          font-family: Arial, sans-serif;
+          color: red;
+          text-align: center;
+        }
+        td {
+            font-size: 22px;
+            font-family: Arial, sans-serif;
+            color: navy;
+            text-align: right;
+            padding: 10px;
+          }
+          
+          input[type="number"] {
+            font-size: 21px;
+            border-radius: 20px;
+            padding: 10px;
+            border: none; 
+          }
+          input[type="submit"] {
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+            color: navy;
+            border-radius: 10px;
+            padding: 10px 20px;
+          }
+          
+          .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+  
+</style>
+</head>
+  <body>
+  <div align='center' class='main'>
+    <h1>Please Enter The Following Information:</h1>
+     <form action='result'>
+        <table>
+            <tr>
+                <td align='right'>Pregnancies:</td>
+                <td align='left'> <input type='number' name='n1' ></td>
+            </tr>
+
+            <tr>
+                <td align='right'>Glucose:</td>
+                <td align='left'> <input type='number' name='n2' step='0.01' ></td>
+            </tr>
+
+            <tr>
+                <td align='right'>Blood Pressure:</td>
+                <td align='left'> <input type='number' name='n3' step='0.01'></td>
+            </tr>
+
+            <tr>
+                <td align='right'>Skin Thickness:</td>
+                <td align='left'> <input type='number' name='n4' step='0.01'></td>
+            </tr>
+
+            <tr>
+                <td align='right'>Insulin:</td>
+                <td align='left'> <input type='number' name='n5' step='0.01'></td>
+            </tr>
+
+            <tr>
+                <td align='right'>BMI:</td>
+                <td align='left'> <input type='number' name='n6' step='0.01'></td>
+            </tr>
+
+            <tr>
+                <td align='right'>Diabetes Pedigree Function:</td>
+                <td align='left'> <input type='number' name='n7' step='0.01'></td>
+            </tr>
+
+            <tr>
+                <td align='right'>Age:</td>
+                <td align='left'> <input type='number' name='n8' step='0.01'></td>
+            </tr>
+        </table>
+        <input type='submit'>
+        </form>
+        <h2>{{result2}}</h2>
+
+        
+    </div> 
+    
+  </body>
+</html>
