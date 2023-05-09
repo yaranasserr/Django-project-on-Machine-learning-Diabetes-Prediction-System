@@ -1,0 +1,1 @@
+# Django-project-on-Machine-learning-Diabetes-Prediction-System
