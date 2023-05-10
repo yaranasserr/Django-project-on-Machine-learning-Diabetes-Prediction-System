@@ -2,5 +2,9 @@
 1- Train model using LogisticRegression <br>
 
 
-https://github.com/yaranasserr/Django-project-on-Machine-learning-Diabetes-Prediction-System/assets/72654303/80cc6baf-5959-4aa9-a5b5-3390cd0a39ff
+
+
+
+
+https://github.com/yaranasserr/Django-project-on-Machine-learning-Diabetes-Prediction-System/assets/72654303/64d10fc4-5439-45bb-96aa-dbff606ce129
 
